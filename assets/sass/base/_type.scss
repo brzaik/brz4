@@ -1,0 +1,22 @@
+h1 {
+  font-size: $font-size-base * 2.986;
+}
+h2 {
+  font-size: $font-size-base * 2.488;
+}
+h3 {
+  font-size: $font-size-base * 2.074;
+}
+h4 {
+  font-size: $font-size-base * 1.728;
+}
+h5 {
+  font-size: $font-size-base * 1.44;
+  //line-height: 1.3em;
+}
+
+a {
+  border-bottom: solid 2px $link-color;
+  color: $gray-dark;
+  text-decoration: none;
+}

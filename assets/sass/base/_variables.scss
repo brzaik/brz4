@@ -1,0 +1,25 @@
+// brz4 Style Variables
+//-------------------------
+
+
+// Colors
+//
+
+$gray-dark:                 #333333;
+
+$link-color:                #199ED7;
+$color-base:                $gray-dark;
+
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif:    "europa", -apple-system, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-monospace:     Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:          $font-family-sans-serif !default;
+
+$font-size-base:            1.25rem !default;    // this assumes 20px base (1.25em @ 16px)
+$font-size-lg:              1.8rem !default;
+$font-size-sm:              .868rem !default;
+$font-size-xs:              .723rem !default;
