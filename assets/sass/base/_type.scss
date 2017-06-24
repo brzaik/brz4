@@ -1,22 +1,69 @@
 h1 {
-  font-size: $font-size-base * 2.986;
+  font-size: $font-size-base * 2.986; // 59.72px
 }
 h2 {
-  font-size: $font-size-base * 2.488;
+  font-size: $font-size-base * 2.488; // 49.76px
 }
 h3 {
-  font-size: $font-size-base * 2.074;
+  font-size: $font-size-base * 2.074; // 41.48
 }
 h4 {
-  font-size: $font-size-base * 1.728;
+  font-size: $font-size-base * 1.728; // 34.56px
 }
 h5 {
-  font-size: $font-size-base * 1.44;
+  font-size: $font-size-base * 1.44;  // 28.8px
   //line-height: 1.3em;
 }
 
+.sub-header {
+  color: $gray;
+  font-weight: $font-weight-light;
+  margin: 0px 0px 8px 0px;
+}
+
 a {
-  border-bottom: solid 2px $link-color;
   color: $gray-dark;
   text-decoration: none;
+  transition: ease-in-out all 0.15s;
+
+  &.underline {
+    border-bottom: solid 1px $link-color;
+    transition: ease-in-out all 0.15s;
+  }
+
+  &:hover {
+    color: darken($link-color, 15%);
+
+    &.underline {
+      border-color: darken($link-color, 15%);
+    }
+  }
+}
+
+.font-light {
+  font-weight: $font-weight-light;
+}
+
+.font-regular {
+  font-weight: $font-weight-regular;
+}
+
+.font-heavy {
+  font-weight: $font-weight-heavy;
+}
+
+.margin-none {
+  margin: 0px;
+}
+.margin-top-none {
+  margin-top: 0px;
+}
+.margin-top-sm {
+  margin-top: 8px;
+}
+.margin-bottom-none {
+  margin-bottom: 0px;
+}
+.margin-bottom-sm {
+  margin-bottom: 8px;
 }

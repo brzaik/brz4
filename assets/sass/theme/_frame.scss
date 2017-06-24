@@ -1,6 +1,50 @@
 body {
   background-color: #FFFFFA;
 }
+
 header {
-  margin-top: 108px;
+
+}
+
+hr.header-line {
+  border-color: $gray-light;
+  margin: 1.6em 0;
+}
+
+.home {
+  margin: 0 auto;
+
+  .row [class^="col"] {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-sm) {
+  header {
+    margin-top: 50px;
+    margin-bottom: 200px;
+
+    h4 {
+      margin: 60px 0px;
+    }
+  }
+
+  .home hr.header-line {
+    margin: 60px auto;
+    width: 160px;
+  }
+}
+@media only screen and (min-width: $breakpoint-sm) {
+  header {
+    margin-top: 108px;
+    margin-bottom: 200px;
+
+    h4 {
+      margin: 72px 0px;
+    }
+  }
+  .home {
+    width: 500px;
+  }
 }

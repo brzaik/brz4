@@ -1,0 +1,27 @@
+.card-work {
+  .card-title {
+    margin: 32px;
+  }
+}
+
+.block {
+  width: 100%;
+  height: 350px;
+
+  &.block-seafoam {
+    background: linear-gradient(210.41deg, #B7F4E6 0%, #76E4CB 100%);
+  }
+  &.block-pink {
+    background: linear-gradient(210.34deg, #F5D3FC 0%, #F4C0FF 100%);
+  }
+  &.block-peach {
+    background: linear-gradient(210.35deg, #FFE9B6 0%, #FFCF80 100%);
+  }
+  &.block-sky {
+    background: linear-gradient(210.35deg, #A9D3FF 0%, #80BDFF 100%);
+  }
+}
+
+.home-block-margin {
+  margin-bottom: 160px;
+}

@@ -2,11 +2,16 @@
 ---
 @charset "utf-8";
 
-@import 'vendor/normalize';
-
 @import 'base/variables';
+@import 'base/mixins';
+
+@import 'vendor/normalize';
+@import 'vendor/simple-grid';
+
 @import 'base/root';
 @import 'base/type';
 @import 'base/utilities';
 
 @import 'theme/frame';
+@import 'theme/nav';
+@import 'theme/portfolio';

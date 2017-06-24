@@ -1,0 +1,25 @@
+ul.nav {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style-type: none;
+    display: inline;
+    margin: 0 45px;
+
+    a {
+      display: inline-block;
+    }
+  }
+}
+
+.link-home {
+
+  > img {
+    transition: ease-in-out all 0.35s;
+  }
+
+  &:hover > img {
+    transform: rotate(30deg);
+  }
+}
