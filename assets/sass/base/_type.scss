@@ -52,18 +52,30 @@ a {
   font-weight: $font-weight-heavy;
 }
 
+.font-gray-dark {
+  color: $gray-dark;
+}
+
+.font-gray {
+  color: $gray;
+}
+
 .margin-none {
   margin: 0px;
 }
+
 .margin-top-none {
   margin-top: 0px;
 }
+
 .margin-top-sm {
   margin-top: 8px;
 }
+
 .margin-bottom-none {
   margin-bottom: 0px;
 }
+
 .margin-bottom-sm {
   margin-bottom: 8px;
 }

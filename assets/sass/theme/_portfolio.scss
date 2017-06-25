@@ -1,6 +1,6 @@
 .card-work {
   .card-title {
-    margin: 32px;
+    margin: 28px;
   }
 }
 
@@ -24,4 +24,35 @@
 
 .home-block-margin {
   margin-bottom: 160px;
+}
+
+
+// Photography Section on Front Page
+.photog {
+  background-image: url("/assets/images/photo_ggb.jpg");
+  background-size: cover;
+  height: 850px;
+  padding-top: 130px;
+
+  // theming
+  &.dark {
+    h1, h2, h3, h4, h5 {
+      color: #FFFFFF;
+    }
+    a {
+      color: $link-color-darkbg;
+
+      &:hover {
+        color: darken($link-color-darkbg, 25%);
+      }
+    }
+  }
+}
+
+.slick-photog img {
+  border-top: solid 4px #FFFFFF;
+  border-bottom: solid 4px #FFFFFF;
+  border-left: solid 2px #FFFFFF;
+  border-right: solid 2px #FFFFFF;
+  height: 250px;
 }
