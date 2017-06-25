@@ -1,7 +1,12 @@
 
 $(document).ready(function(){
-  $('.cards').slick({
-
+  $('.slick-cards').slick({
+    centerMode: true,
+    centerPadding: '60px',
+    lazyLoad: 'progressive',
+    infinite: false,
+    initialSlide: $('.slick-cards > div').size() - 1,
+    variableWidth: true
   });
 
   // JavaScript
