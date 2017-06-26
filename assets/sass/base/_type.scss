@@ -33,9 +33,14 @@ a {
 
   &:hover {
     color: darken($link-color, 15%);
+    transition: ease-in-out all 0.15s;
 
     &.underline {
-      border-color: darken($link-color, 15%);
+      border: 0;
+    }
+
+    &.underline-hover {
+      border-bottom: solid 1px darken($link-color, 15%);
     }
   }
 }

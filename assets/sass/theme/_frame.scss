@@ -3,7 +3,8 @@ body {
 }
 
 header {
-
+  margin-top: 12px;
+  margin-bottom: 250px;
 }
 
 footer {
@@ -12,7 +13,7 @@ footer {
 
 hr.header-line {
   border-color: $gray-light;
-  margin: 1.6em 0;
+  margin: 2.25em 0;
 }
 
 .home {
@@ -24,10 +25,25 @@ hr.header-line {
   }
 }
 
-@media only screen and (max-width: $breakpoint-sm) {
+.scroll-arrow {
+  position: absolute;
+  bottom: 48px;
+  opacity: 0.2;
+  width: 100%;
+  text-align: center;
+
+  > img {
+    margin: 0 auto;
+    width: 30px;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-md) {
   header {
-    margin-top: 50px;
-    margin-bottom: 200px;
+
+    ul.nav {
+      margin-bottom: 60px;
+    }
 
     h4 {
       margin: 60px 0px;
@@ -36,16 +52,23 @@ hr.header-line {
 
   .home hr.header-line {
     margin: 60px auto;
-    width: 160px;
+    width: 100px;
   }
 }
-@media only screen and (min-width: $breakpoint-sm) {
+@media only screen and (min-width: $breakpoint-md) {
   header {
-    margin-top: 108px;
-    margin-bottom: 200px;
+    margin-top: 20px;
+
+    ul.nav {
+      margin-bottom: 125px;
+    }
 
     h4 {
       margin: 72px 0px;
+    }
+
+    h5 {
+      width: 80%;
     }
   }
   .home {

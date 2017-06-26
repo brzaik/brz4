@@ -28,7 +28,14 @@ $(document).ready(function(){
 
   // JavaScript
   window.sr = ScrollReveal();
-  sr.reveal('.card-work', {
+    sr.reveal('.card-work', {});
 
-  });
+  $(window).bind('scroll', function() {
+     if ($(window).scrollTop() > 100) {
+         $('#scroll-arrow').fadeOut();
+     }
+     else {
+         $('#scroll-arrow').fadeIn();
+     }
+   });
 });

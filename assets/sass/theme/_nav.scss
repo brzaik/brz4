@@ -5,15 +5,27 @@ ul.nav {
   li {
     list-style-type: none;
     display: inline;
-    margin: 0 45px;
+    margin: 0 35px;
 
     a {
       display: inline-block;
     }
   }
 
+  li.active a {
+    border-bottom: solid 1px $gray-light;
+    font-weight: $font-weight-heavy;
+  }
+
   &.right {
     float: right;
+  }
+}
+
+ul.nav {
+  li a {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-light;
   }
 }
 
@@ -24,6 +36,6 @@ ul.nav {
   }
 
   &:hover > img {
-    transform: rotate(30deg);
+    transform: rotate(20deg);
   }
 }
