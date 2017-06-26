@@ -5,6 +5,10 @@ body {
 header {
   margin-top: 12px;
   margin-bottom: 250px;
+
+  ul.nav {
+    margin-bottom: 60px;
+  }
 }
 
 footer {
@@ -38,29 +42,44 @@ hr.header-line {
   }
 }
 
-@media only screen and (max-width: $breakpoint-md) {
+@media (max-width: $breakpoint-sm) {
   header {
-
-    ul.nav {
-      margin-bottom: 60px;
+    h4 {
+      margin: 60px 0px 120px 0px;
     }
+  }
+}
 
+@media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+  header {
     h4 {
       margin: 60px 0px;
     }
   }
 
-  .home hr.header-line {
-    margin: 60px auto;
-    width: 100px;
+  .scroll-arrow {
+    bottom: 24px;
+  }
+
+  footer {
+    ul.nav.right {
+      float: none;
+      margin-top: 50px;
+
+      li {
+        display: block;
+        text-align: center;
+        margin: 12px 0px;
+      }
+    }
   }
 }
-@media only screen and (min-width: $breakpoint-md) {
+@media (min-width: $breakpoint-md) {
   header {
     margin-top: 20px;
 
     ul.nav {
-      margin-bottom: 125px;
+      margin-bottom: 100px;
     }
 
     h4 {
