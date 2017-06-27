@@ -1,0 +1,84 @@
+---
+layout: work
+---
+
+<div class="work-header block-margin">
+  <div class="block block-page block-peach">
+    <div class="container">
+      <p class="sub-header">2016</p>
+      <h1>Lotus</h1>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-7">
+        <p>Lotus is a native iPad app for drawing in real-time with others. It recreates the experience of drawing on the same whiteboard with others and is built for the Apple Pencil.</p>
+        <p>I worked with two engineers and took the app from sketches at a hackathon to launch on the iOS App Store. I worked on everything from branding the app to designing all interactions and even building parts of the UI using Swift.</p>
+
+        <div class="row">
+          <div class="col-7">
+            <p class="sub-header">
+              MY ROLES
+            </p>
+            <p>Interaction Design, Branding, UI Engineering, Marketing</p>
+          </div>
+          <div class="col-5">
+            <p class="sub-header">
+              COMPANY
+            </p>
+            <p>Self-Started</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-5">
+        <div class="work-hero hidden-sm hidden-md">
+          <img src="/assets/images/shell_phone_gray.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="container block-margin">
+  <h3>Pencil Dreams</h3>
+  <p>Let me start by saying that I am a huge believer in the iPad. Back when people said the iPad was a toy meant only for consuming media, I tried to use it for my work as a designer. Trying out iPad Pro and Apple Pencil, however, was the moment of true revelation.</p>
+  <p>But it was still only a tool for me to use alone and not with teammates. I work on a daily basis with people from all around the world. There really were no great ways of matching the experience of standing around a whiteboard and sketching out ideas together. This was the inspiration for Lotus, a side project I started in the spring of 2016 with two software engineers.</p>
+</div>
+
+<div class="container block-margin">
+  <h3>Hacking a Prototype</h3>
+  <p>A few weeks after we decided to work together, the LAUNCH Hackathon was held in San Francisco. Over the course of 48 hours, we took Lotus from sketches to a working prototype for iOS 9, running natively on the iPad Pro. My primary roles during this time were to conceive the user experience, design the logo and brand identity, and build key parts of the user interface on the native hardware. This was a great opportunity for somebody like me who works a good chunk of the time with wireframes and sketches. I learned enough Swift to be dangerous.</p>
+</div>
+
+<div class="container block-margin">
+  <h3>Technical Considerations</h3>
+  <p>We implemented the app for iPad using Swift and the accompanying iOS 9 APIs. We integrated with Apple Pencil APIs to ensure the app would work out of the box with the stylus and also support finger drawing.</p>
+  <p>The biggest bit of tech under the hood was for drawing persistence and synching across the Internet. For this, we turned to Google Firebase and implemented a simple caching mechanism to store strokes locally on the client.</p>
+  <p>For authentication, we used Digits, from Twitter. This provided a simple, cheap authentication method for the tight time constraints of the hackathon. Read more about Digits here.</p>
+</div>
+
+<div class="container block-margin">
+  <h3>Prioritizing the Backlog</h3>
+  <p>The Hackathon helped us a great deal in maintaining focus because of its intense time constraints, but when it came time to launch the app publicly, we needed a backlog and priorities. We used Trello to assemble a poor man's backlog, and I served as the product manager, prioritizing use cases and fleshing out critical details. My goals were to create a dead simple drawing experience that just worked and keep the cloud syncing invisible to the user.</p>
+</div>
+
+<div class="container block-margin">
+  <h3>App Design</h3>
+  <p>Lotus has a very flat and simple information architecture. We settled on a simple home screen grid of whiteboards, each showing a name and a thumbnail preview. I pushed for this preview instead of some flat list because I felt that without the thumbnails users would have to repeatedly go back and forth to distinguish the boards visually. The only other primary view was for the infinitely large drawing space, with visual indicators for each available tool (Pencil, Eraser, etc.).</p>
+  <p>We had to figure out whether each board would have multiple pages or layers. I made the argument that a fixed size canvas with just one layer per board would be easiest to understand, especially as we planned on integrating a full history to allow people to go backward and forward in time if they wished. I felt that having this history impact multiple pages within the same board at the same time would have made the experience overly complicated.</p>
+  <p>The final issue to work through was loading. As people worked in real time, their strokes would be saved over the Internet to Google's Firebase cloud service and then downloaded locally on the tablets of everyone else invited to that board. But the initial load time proved to be a difficult point to handle. To ensure that people opening a board would always see the most up-to-date strokes as others were drawing on the board, we implemented a simple progress bar that would be shown upon loading a board's strokes. Because there might be no limit to the amount of time and stroke content represented within a single board, we discussed cutting the board history off at a given point and flattening the strokes to a still image up to that point in the history. This ensured initial load times did not become overly long.</p>
+</div>
+
+<div class="container block-margin">
+  <h3>Logo and Brand Identity</h3>
+  <p>We had a huge list of different names during brainstorming for what to call our product, from the mundane ("MindSlate", "LiveSlate", "Synergy") to the empty vessels ("Coconut", "Cauldron", "Igloo"). The latter set really got to this idea of a blank, white board like what you'd find in any office. Eventually, we settled on the name "Lotus", signifying the rarity and purity of a white lotus much in the way that a collaborative board within the app starts as a pure white canvas for creativity. From there, I worked to design the logo, playing around with different representations of a lotus flower while trying to keep the shape simple and reproducible. I settled on the free type face Arcon for the logotype and brand text, which provided a minimalistic and elegant type treatment that did not conflict with the logo mark.</p>
+</div>
+
+<div class="container block-margin">
+  <h3>Results and Release</h3>
+  <p>On the final day of the Hackathon, we demonstrated Lotus to the judges. They were blown away by the fact that the app actually worked, over the Internet, and even with the poor wifi coverage of the Fort Mason pavilion. We made it through two rounds of judging, with the judges concerned only about the potential size of our market opportunity considering the relatively small iPad Pro user base.</p>
+  <p>We got the app approved by Apple in the summer and released it to US audiences via the App Store. While we are not sure if we will ultimately get traction with the app, we are sharing the app via multiple social networks and marketing channels and looking forward to future releases that further expand the functionality of Lotus.</p>
+  <p>Go grab the app <a href="http://getlot.us" class="underline">here</a>!</p>
+</div>

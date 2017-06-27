@@ -13,13 +13,22 @@
 
   @media only screen and (min-width: $breakpoint-lg) {
     width: 85%;
-    max-width: 64rem;
+    max-width: $breakpoint-xl;
+  }
+
+  > .row {
+    margin-left: -2%;
+    margin-right: -2%;
   }
 }
 
 .row {
   position: relative;
-  width: 100%;
+}
+
+.row .row {
+  margin-left: -2%;
+  margin-right: -2%;
 }
 
 .row [class^="col"] {

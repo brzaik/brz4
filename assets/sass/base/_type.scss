@@ -1,18 +1,22 @@
 h1 {
   font-size: $font-size-base * 2.986; // 59.72px
+  line-height: 1.2em;
 }
 h2 {
   font-size: $font-size-base * 2.488; // 49.76px
+  line-height: 1.2em;
 }
 h3 {
   font-size: $font-size-base * 2.074; // 41.48
+  line-height: 1.2em;
 }
 h4 {
   font-size: $font-size-base * 1.728; // 34.56px
+  line-height: 1.2em;
 }
 h5 {
   font-size: $font-size-base * 1.44;  // 28.8px
-  //line-height: 1.3em;
+  line-height: 1.2em;
 }
 
 .sub-header {
@@ -43,6 +47,11 @@ a {
       border-bottom: solid 1px darken($link-color, 15%);
     }
   }
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 1.65em;
 }
 
 .font-light {

@@ -4,9 +4,7 @@
 
 html {
   box-sizing: border-box;
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+  color: $color-base;
 }
 
 /**
@@ -72,6 +70,7 @@ textarea {
 body {
   font-size: $font-size-base;
   font-family: $font-family-sans-serif;
+  line-height: $font-height;
 }
 
 .wrapper {
