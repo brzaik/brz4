@@ -13,6 +13,8 @@
 .block {
   width: 100%;
 
+  // theming for blocks:
+
   &.block-seafoam {
     background: linear-gradient(210.41deg, #B7F4E6 0%, #76E4CB 100%);
   }
@@ -25,31 +27,50 @@
   &.block-sky {
     background: linear-gradient(210.35deg, #A9E9FF 0%, #80E0FF 100%);
   }
+  &.block-gray {
+    background: linear-gradient(210.35deg, #E3E3E3 0%, #F4F6F7 100%);
+  }
+
+  &.block-black {
+    background: #282828; //#202020;
+
+    h1, h2, h3, h4, h5, p {
+      color: #FFFFFF;
+    }
+
+    a {
+      color: $link-color;
+    }
+
+    .sub-header {
+      color: #9B9B9B;
+    }
+  }
+}
+
+.block-page {
+  padding: 90px 0px;
+
+  h1 {
+    line-height: normal;
+  }
+  .sub-header {
+    font-size: $font-size-base * 1.2;
+    margin: 0px;
+    font-weight: $font-weight-light;
+  }
+}
+
+.home-block-margin, .block-margin-bottom {
+  margin-bottom: 180px;
 }
 
 .block-home {
   height: 350px;
 }
 
-.block-page {
-  padding: 45px 0px;
-  margin-bottom: 75px;
-
-  h1 {
-    margin: 0px;
-    line-height: normal;
-  }
-  .sub-header {
-    font-size: $font-size-base * 1.2;
-    color: #FFFFFF;
-    margin: 0px;
-    font-weight: $font-weight-heavy;
-    margin-left: 4px;
-  }
-}
-
-.home-block-margin {
-  margin-bottom: 180px;
+.block-design {
+  padding: 100px 40px;
 }
 
 

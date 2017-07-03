@@ -2,6 +2,10 @@ body {
   background-color: #FFFFFA;
 }
 
+img {
+  max-width: 100%;
+}
+
 header {
   margin-top: 12px;
   margin-bottom: 250px;
@@ -17,7 +21,7 @@ header {
 }
 
 header.header-short {
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 
   hr.header-line {
     margin: 1.8em 0;
