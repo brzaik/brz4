@@ -78,7 +78,6 @@
 .photog {
   background-image: url("/assets/images/photo_ggb.jpg");
   background-size: cover;
-  height: 850px;
   padding-top: 130px;
 
   // theming
@@ -106,14 +105,15 @@
 
 
 // Work Pages
-.work-header { }
+.work-header {
+  margin-bottom: 180px;
+}
 
-.work-hero {
-  margin-top: -235px;
-  text-align: right;
+// Responsive Overrides
 
-  > img {
-    width: 100%;
-    max-width: 350px;
+// Large widths (landscape tablet, web)
+@media (min-width: $breakpoint-md) {
+  .work-header {
+    margin-bottom: 220px;
   }
 }

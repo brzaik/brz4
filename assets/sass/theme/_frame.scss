@@ -36,6 +36,10 @@ footer {
   margin-bottom: 140px;
 }
 
+.container-inset {
+
+}
+
 .home {
   margin: 0 auto;
 
@@ -85,6 +89,10 @@ footer {
     bottom: 24px;
   }
 
+  .photog {
+    min-height: 500px;
+  }
+
   footer {
     ul.nav.right {
       float: none;
@@ -116,6 +124,15 @@ footer {
       width: 80%;
     }
   }
+
+  .photog {
+    min-height: 850px;
+  }
+
+  .container-inset {
+    width: 52%;
+  }
+
   .home {
     width: 500px;
   }
