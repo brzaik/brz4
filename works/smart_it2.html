@@ -3,47 +3,77 @@ layout: work
 ---
 
 <div class="work-header">
-  <div class="block block-page block-sky">
+  <div class="block block-page block-black">
     <div class="container">
       <p class="sub-header">2015</p>
-      <h1>Smart IT 1.1</h1>
-    </div>
-  </div>
+      <h1 class="margin-none">Smart IT 1.1</h1>
+      <p><a href="#" class="underline-hover">View the Product</a></p>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-7">
-        <p>The goals for the second major release of Smart IT were to translate the experience to native mobile apps and expand Smart IT for Knowledge workers and Change Managers.</p>
-        <p>I conducted user research studies to develop our understanding of these new personas and led the interaction design for the four new platforms (iPhone, iPad, Android Phone, Android Tablet). The final product has been praised for its support of Knowledge-Centered Support (KCS) principles and the ease of editing knowledge articles.</p>
-
-        <div class="row">
-          <div class="col-7">
-            <p class="sub-header">
-              MY ROLES
-            </p>
-            <p>Interaction Design, Prototyping, User Research, Product Strategy</p>
-          </div>
-          <div class="col-5">
-            <p class="sub-header">
-              COMPANY
-            </p>
-            <p>BMC</p>
-          </div>
+      <div class="row">
+        <div class="col-7">
+          <p>
+            The goals for the second major release of Smart IT were to translate the experience to native mobile apps and expand Smart IT for Knowledge workers and Change Managers.
+          </p>
+          <p>
+            I conducted user research studies to develop our understanding of these new personas and led the interaction design for the four new platforms (iPhone, iPad, Android Phone, Android Tablet). The final product has been praised for its support of Knowledge-Centered Support (KCS) principles and the ease of editing knowledge articles.
+          </p>
         </div>
-      </div>
-      <div class="col-5">
-        <div class="work-hero">
-          <img src="/assets/images/shell_phone_gray.png" alt="" />
+        <div class="col-5">
+          <p class="sub-header">
+            MY ROLES
+          </p>
+          <p>Interaction Design, Prototyping, User Research, Product Strategy</p>
+
+          <p class="sub-header">
+            COMPANY
+          </p>
+          <p>BMC</p>
         </div>
       </div>
     </div>
   </div>
-
+  <img src="/assets/images/ph_workbanner.jpg" alt="" />
 </div>
 
-<div class="container">
-  <h2>Redesigning for Mobile</h2>
-  <p>Rather than starting from the lowest common denominator platform (Phone) for Smart IT 1.0, we attempted to adapt the Universal Client (Desktop/Web) to the tablet form factor. This had some unfortunate consequences. Some of the Desktop/Web patterns were stretch fits for tablet and clashed with Apple's iOS Human Interface Guidelines, such as a grid component for the Ticket Console. Code reuse possibilities between tablet and smartphone were stymied by this approach, as many custom components had to be written for the tablet experience. And as we later found out from anecdotal and market research statistics, many more companies were interested in leveraging their employee's smartphones than buying them tablets. We needed to rethink our approach.</p>
-  <p>We already had made a start to the smartphone designs but many design decisions simply had to be rethought. Working with another interaction designer on our Smart IT team, I drafted a new set of smartphone mockups and identified changes to make to the tablet experience so that the two could better match. We simplified the design to a drill-down navigation stack pattern and attempted to focus on just one action per view. Edit forms were moved to modals and two-column layouts were eschewed in favor of view switchers. All designs were created in Adobe Illustrator and uploaded as individual screens to InVision, where they could be displayed within iPhone and Android phone shells and stitched together into real flows with animated transitions in between. We used InVision for user testing as well with a select set of customer companies keen on mobilizing their workforces with mobile technology.</p>
-  <p>One boon to our mobile design work was the establishment of mobile pattern libraries within Adobe Creative Cloud. These cloud libraries allowed us to build reusable stencils adhering to the iOS and Android interface guidelines. Dragging stencil artwork from the library palette onto Illustrator artboards made it possible to prototype entire flows in minutes! The efficiency gains were incredible.</p>
+<div class="container container-inset block-margin-bottom">
+  <h3>Redesigning for Mobile</h3>
+  <p>
+    The rapid development process of Smart IT 1.0 put us in a tough position. Rather than starting from the lowest common denominator platform (Phone), we had taken the Desktop (Web) design and ported it to tablets. In hindsight, this was a bad idea. Some of the Desktop/Web patterns were stretch fits for tablet and clashed with Apple's iOS Human Interface Guidelines, such as a grid component for the Ticket Console. Code reuse possibilities between tablet and smartphone were stymied by this approach, as many custom components had to be rewritten for the tablet experience. And as we later found out from anecdotal and market research statistics, many more companies were interested in leveraging their employee's smartphones than buying them tablets. We needed to rethink our approach.
+  </p>
+  <p>
+    For smartphones, many design decisions simply had to be rethought. Working with another interaction designer on our Smart IT team, I simplified the design to a drill-down navigation stack pattern and attempted to focus on just one action per view. Edit forms were moved to modal pages and two-column layouts were eschewed in favor of view switchers. All designs were created in Adobe Illustrator and uploaded as individual screens to InVision, where they could be displayed within iPhone and Android phone shells and stitched together into real flows with animated transitions in between. We used InVision for user testing as well, with a select set of customer companies keen on mobilizing their workforces with mobile technology.
+  </p>
+</div>
+
+<div class="block block-gray block-design block-margin-bottom">
+  <img src="/assets/images/ph_strawman.png" alt="" />
+</div>
+
+<div class="container block-margin-bottom">
+  <h3>Knowledge-Centered Support</h3>
+  <p>
+    Knowledge articles were such a vital part of the Smart Recorder user experience in Smart IT 1.0, and with this new release I wanted to expand on that story. A product focus on Knowledge Centered Support (KCS) pushed us to think about how we could reframe IT service as a team sport.
+  </p>
+  (Structure around KCS principles and how Smart IT solves those)
+  <p>
+    Smart Recorder provides instant access to knowledge resources on the same screen as the notes an IT agent is typing, so it made sense to allow agents to make quick changes to knowledge resources without leaving the Recorder experience.
+  </p>
+  <p>
+    The text editor for knowledge articles in the classic BMC Remedy was atrocious and frequently cited as one of the worst things about the software. Starting from the ground up, I determined the required text editing capabilities and designed a unified set of editing styles that could move across Desktop, Tablet, and Phone experiences. These allowed true cross-platform convergence - agents could start a knowledge article on one platforms and pick up where they left off with editing on a different platform!
+  </p>
+</div>
+
+<div class="container block-margin-bottom">
+  Before &amp; After
+  <h3>Change Wizard</h3>
+  <p>
+    [Change Management is a whole field to which some people dedicate their entire careers, and it takes a while to understand the processes and complexities of the work. Testing several concepts with customers, a guided wizard emerged as a powerful approach for registering and managing change requests. But this was a moving target as our architects dug into the complex logic and capabilities of the legacy change management system.]
+  </p>
+</div>
+
+<div class="container block-margin-bottom">
+  <h3>Release and KCS Certification</h3>
+  <p>
+    &nbsp;
+  </p>
 </div>
