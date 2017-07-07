@@ -10,28 +10,28 @@
   }
 }
 
-.block {
+.stripe {
   width: 100%;
 
   // theming for blocks:
 
-  &.block-seafoam {
+  &.stripe-seafoam {
     background: linear-gradient(210.41deg, #B7F4E6 0%, #76E4CB 100%);
   }
-  &.block-pink {
+  &.stripe-pink {
     background: linear-gradient(210.34deg, #F5D3FC 0%, #F4C0FF 100%);
   }
-  &.block-peach {
+  &.stripe-peach {
     background: linear-gradient(210.35deg, #FFE9B6 0%, #FFCF80 100%);
   }
-  &.block-sky {
+  &.stripe-sky {
     background: linear-gradient(210.35deg, #A9E9FF 0%, #80E0FF 100%);
   }
-  &.block-gray {
+  &.stripe-gray {
     background: linear-gradient(210.35deg, #E3E3E3 0%, #F4F6F7 100%);
   }
 
-  &.block-black {
+  &.stripe-black {
     background: #282828; //#202020;
 
     h1, h2, h3, h4, h5, p {
@@ -48,9 +48,7 @@
   }
 }
 
-.block-page {
-  padding: 90px 0px;
-
+.stripe-page {
   h1 {
     line-height: normal;
   }
@@ -61,17 +59,34 @@
   }
 }
 
-.home-block-margin, .block-margin-bottom {
-  margin-bottom: 180px;
-}
-
-.block-home {
+.stripe-home {
   height: 350px;
 }
 
-.block-design {
+
+// PADDERS
+// padder class is used for applying padding and margin - must always be nested inside some block element, like .stripe
+
+.home-padder-margin, .padder-margin-bottom {
+  margin-bottom: 180px;
+}
+
+.padder-flush {
+  padding: 0px;
+}
+
+.padder-page {
+  padding: 90px 0px;
+}
+
+.padder-condensed {
   padding: 100px 40px;
 }
+.padder-calm {
+  padding: 120px 80px;
+}
+
+
 
 
 // Photography Section on Front Page
@@ -107,6 +122,11 @@
 // Work Pages
 .work-header {
   margin-bottom: 180px;
+
+  .hero img {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 // Responsive Overrides
