@@ -73,6 +73,10 @@
 
 .padder-flush {
   padding: 0px;
+
+  img {
+    width: 100%;
+  }
 }
 
 .padder-page {
@@ -129,6 +133,11 @@
   }
 }
 
+.i_flow_right {
+  width: 35px;
+  height: 35px;
+}
+
 // Responsive Overrides
 
 // Large widths (landscape tablet, web)
@@ -136,4 +145,25 @@
   .work-header {
     margin-bottom: 220px;
   }
+}
+
+
+// Special Pages
+.ipad-left {
+  background-image: url("/assets/images/work_assets/lotus/ipad_white.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding: 10% 18% 10% 0%;
+}
+.ipad-right {
+  background-image: url("/assets/images/work_assets/lotus/ipad_black.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding: 10% 0% 10% 18%;
+}
+video#lotusvid-left {
+  width: 100%;
+}
+video#lotusvid-right {
+  width: 100%;
 }

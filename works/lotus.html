@@ -7,7 +7,7 @@ layout: work
     <div class="container padder-page">
       <p class="sub-header">2016</p>
       <h1 class="margin-none">Lotus</h1>
-      <p><a href="#" class="underline-hover">View the Product</a></p>
+      <p><a href="http://getlot.us" target="_blank" class="underline-hover">View the Product</a></p>
 
       <div class="row">
         <div class="col-7">
@@ -38,54 +38,105 @@ layout: work
 </div>
 
 
-<div class="container padder-margin">
+<div class="container container-inset padder-margin-bottom">
   <h3>Pencil Dreams</h3>
   <p>
-    Let me start by saying that I am a huge believer in the iPad. Back when people said the iPad was a toy meant only for consuming media, I tried to use it for my work as a designer. Trying out iPad Pro and Apple Pencil, however, was the moment of true revelation.
+    I am a huge believer in the iPad. Back when people said the iPad was a toy meant only for consuming media, I was using it for sketching and painting. Things didn't get really exciting until the iPad Pro and Apple Pencil combination launched.
   </p>
   <p>
-    But it was still only a tool for me to use alone and not with teammates. I work on a daily basis with people from all around the world. There really were no great ways of matching the experience of standing around a whiteboard and sketching out ideas together. This was the inspiration for Lotus, a side project I started in the spring of 2016 with two software engineers.
+    Yet the iPad was still only a tool for me to use alone and not with others. I work on a daily basis with people from all around the world. There really were no great ways of matching the experience of standing around a whiteboard and sketching out ideas together. This was the inspiration for Lotus, a side project I started in the spring of 2016 with two software engineers.
   </p>
 </div>
 
-<div class="container padder-margin">
-  <h3>Hacking a Prototype</h3>
-  <p>
-    A few weeks after we decided to work together, the LAUNCH Hackathon was held in San Francisco. Over the course of 48 hours, we took Lotus from sketches to a working iOS app running natively on the iPad Pro. My primary roles during this time were to conceive the user experience, design the logo and brand identity, and build key parts of the user interface on the native hardware. This was a great opportunity for somebody like me who works a good chunk of the time with wireframes and sketches. I learned enough Swift to be dangerous.
-  </p>
-  <p>
-    On the final day of the Hackathon, we demonstrated Lotus to the judges. They were blown away by the fact that the app worked, even with the poor wifi coverage of the Fort Mason pavilion. We made it through two rounds of judging, with the judges concerned only about the potential size of our market opportunity considering the relatively small iPad Pro user base. After the hackathon, we agreed that we wanted to launch the app publicly.
-  </p>
+<div class="padder-flush padder-margin">
+  <img src="/assets/images/work_assets/lotus/ipad_samples.jpg" alt="" />
 </div>
 
 <div class="container padder-margin">
-  <h3>Priorities and Focus</h3>
+  <div class="row">
+    <div class="col-6">
+      <h3 class="margin-top-none">Hacking a Prototype</h3>
+      <p>
+        A few weeks after we decided to build a real-time whiteboard app, the LAUNCH Hackathon was held in San Francisco. Over the course of 48 hours, we took Lotus from sketches to a working iOS app running natively on the iPad Pro. My primary roles during this time were to conceive the user experience, design the logo and brand identity, and build key parts of the user interface on the native hardware. This was a great opportunity for somebody like me who works a good chunk of the time with wireframes and sketches. I learned enough Swift to be dangerous.
+      </p>
+      <p>
+        On the final day of the Hackathon, we demonstrated Lotus to the judges. They were blown away by the fact that the app worked, even with the poor wifi coverage of the Fort Mason pavilion. We made it through two rounds of judging. After the hackathon, we agreed that we wanted to launch the app publicly.
+      </p>
+    </div>
+    <div class="col-6">
+      <img src="/assets/images/work_assets/lotus/launch.jpg" alt="The LAUNCH Hackathon in 2016." />
+    </div>
+  </div>
+</div>
+
+<div class="padder-margin">
+  <div class="row-flush">
+    <div class="col-3 hidden-sm">
+      <div class="ipad-left">
+        <video autoplay loop poster="/assets/images/work_assets/lotus/ipad_white_ph.png"id="lotusvid-left">
+          <source src="/assets/images/work_assets/lotus/ipadleftvid.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="padder-calm">
+        <h5 class="container center">Another drawing app wouldn't be anything special.</h5>
+        <h5 class="container center">When you are in different rooms—or in different time zones—and see your friend's pen strokes in real-time, it's magical.</h5>
+      </div>
+    </div>
+    <div class="col-3 hidden-sm">
+      <div class="ipad-right">
+        <video autoplay loop poster="/assets/images/work_assets/lotus/ipad_black_ph.png" id="lotusvid-right">
+          <source src="/assets/images/work_assets/lotus/ipadrightvid.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container container-inset padder-margin">
   <p>
-    I pushed for an experience that “just works” with as little setup as possible. There were just two main views: a gallery of existing whiteboards and the drawing canvas. We integrated Apple Pencil APIs to ensure the app would work out of the box with the tool and also support finger drawing.
+    To persist and share these pen strokes across the Internet, we turned to <a href="https://firebase.google.com/" class="underline">Google Firebase</a> and implemented a simple caching mechanism to store strokes locally on the client. I tried to keep the synchronization with Firebase invisible. Pen strokes were always saved locally to the device in case something happened to go wrong with the network connectivity, and I designed a simple indicator for when the device is offline. We included a basic flow for inviting others to your boards via the iOS Contacts list and opened up sharing of boards via iMessage and SMS.
   </p>
 </div>
 
-<div class="container padder-margin">
-  <h3>The Secret Sauce</h3>
-  <p>
-    The biggest bit of tech under the hood was for drawing persistence and synching across the Internet. For this, we turned to Google Firebase and implemented a simple caching mechanism to store strokes locally on the client.
-  </p>
-  <p>
-    I tried to keep the synchronization with Firebase invisible. Pen strokes were always saved locally to the device in case something happened to go wrong with the network connectivity, and I designed a simple indicator for when the device is offline. We included a basic flow for inviting others to your boards via the iOS Contacts list and opened up sharing of boards via iMessage and SMS.
-  </p>
+<div class="stripe stripe-gray padder-margin">
+  <div class="padder-condensed padder-margin-bottom">
+    <div class="row">
+      <div class="col-6">
+        <img src="/assets/images/work_assets/lotus/lotus_flow1_1.png" alt="" />
+      </div>
+      <div class="col-6">
+        <img src="/assets/images/work_assets/lotus/lotus_flow1_2.png" alt="" />
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="container padder-margin">
-  Before and After
-  <h3>Boards Gallery</h3>
+<div class="container container-inset padder-margin">
+  <p class="sub-header font-uppercase margin-none">Before &amp; After</p>
+  <h3 class="margin-top-none">Boards Gallery</h3>
   <p>
     Lotus has a very flat and simple information architecture. We settled on a simple home screen grid of whiteboards, each showing a name and a thumbnail preview. I preferred this presentation instead of a flat list because I felt that without the thumbnails users would have to repeatedly go back and forth to distinguish the boards visually.
   </p>
 </div>
 
-<div class="container padder-margin">
-  Before and After
-  <h3>Canvas</h3>
+<div class="stripe stripe-gray padder-margin">
+  <div class="padder-condensed padder-margin-bottom">
+    <div class="row">
+      <div class="col-6">
+        <img src="/assets/images/work_assets/lotus/boards_mockup.png" alt="" />
+      </div>
+      <div class="col-6">
+        <img src="/assets/images/work_assets/lotus/boards_sketch.png" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container container-inset padder-margin">
+  <p class="sub-header font-uppercase margin-none">Before &amp; After</p>
+  <h3 class="margin-top-none">Canvas</h3>
   <p>
     We had to figure out whether each board would have multiple pages or layers. I felt a fixed size canvas with just one layer per board would be easiest to understand, especially as we planned on integrating a full history to allow people to go backward and forward in time if they wished. Having this history impact multiple pages within the same board at the same time would have made the experience overly complicated.
   </p>
@@ -94,12 +145,35 @@ layout: work
   </p>
 </div>
 
-<div class="container padder-margin">
-  <h3>Logo and Brand Identity</h3>
-  <p>We had a huge list of different names during brainstorming for what to call our product, from the mundane ("MindSlate", "LiveSlate", "Synergy") to the empty vessels ("Coconut", "Cauldron", "Igloo"). The latter set really got to this idea of a blank, white board like what you'd find in any office. Eventually, we settled on the name "Lotus." The name suggested the purity of a white lotus, much in the same way that a collaborative surface starts as a pure white canvas. From there, I worked to design the logo, exploring different representations of a lotus flower while trying to keep the shape simple and reproducible. I settled on the free type face Arcon for the logotype and brand text, which provided a minimalistic and elegant type treatment that did not conflict with the logo mark.</p>
+<div class="stripe stripe-gray">
+  <div class="container container-inset padder-page padder-margin">
+    <img src="/assets/images/work_assets/lotus/canvas_sketch.png" alt="" />
+  </div>
 </div>
 
-<div class="container padder-margin">
+<div class="padder-margin">
+  <div class="row">
+    <div class="col-6">
+      <img src="/assets/images/work_assets/lotus/lotus_canvas_final1.jpg" alt="" />
+    </div>
+    <div class="col-6">
+      <img src="/assets/images/work_assets/lotus/lotus_canvas_final2.jpg" alt="" />
+    </div>
+  </div>
+</div>
+
+<div class="container container-inset padder-margin">
+  <h3>Logo and Brand Identity</h3>
+  <p>We came up with a huge list of product names, from the mundane ("MindSlate", "LiveSlate", "Synergy") to the empty vessels ("Coconut", "Cauldron", "Igloo"). Eventually, we settled on the name "Lotus." The name suggested the purity of a white lotus, much in the same way that a collaborative surface starts as a pure white canvas. From there, I worked to design the logo, exploring different representations of a lotus flower while trying to keep the shape simple and reproducible. I settled on the free type face Arcon for the logotype and brand text, which provided a minimalistic and elegant type treatment.</p>
+</div>
+
+<div class="stripe stripe-gray">
+  <div class="padder-condensed padder-margin-bottom">
+    <img src="/assets/images/work_assets/lotus/lotus_logos.png" alt="" />
+  </div>
+</div>
+
+<div class="container container-inset padder-margin">
   <h3>Results and Release</h3>
   <p>
     We got Lotus approved by Apple in the summer following the hackathon and released it to US audiences via the App Store. We currently have a small but loyal set of paying customers and are looking forward to future releases that further expand the functionality of the app as we near the release of iOS 11.
