@@ -40,3 +40,7 @@ exclude:
 gems:
   - jekyll-feed
   - jekyll-sitemap
+
+
+collections:
+  - vinyl_albums
