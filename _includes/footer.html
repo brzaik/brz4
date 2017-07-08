@@ -14,8 +14,8 @@
       </div>
       <div class="col-6">
         <ul class="nav right">
-          <li class="active"><a href="/" class="underline-hover">Work</a></li>
-          <li><a href="/about" class="underline-hover">About</a></li>
+          <li{% if page.namespace == "index" %} class="active"{% endif %}><a href="/" class="underline-hover">Work</a></li>
+          <li{% if page.namespace == "about" %} class="active"{% endif %}><a href="/about" class="underline-hover">About</a></li>
         </ul>
       </div>
     </div>
@@ -27,5 +27,6 @@
 
 <script src="/assets/js/vendor/scrollreveal.min.js"></script>
 <script src="/assets/js/vendor/slick.min.js"></script>
+<script src="/assets/js/vendor/typed.min.js"></script>
 
 <script src="/assets/js/main.js"></script>

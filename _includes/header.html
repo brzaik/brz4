@@ -1,7 +1,7 @@
 <header class="container">
   <ul class="nav center home-block-margin">
-    <li class="active"><a href="/" class="underline-hover">Work</a></li>
-    <li><a href="/about" class="underline-hover">About</a></li>
+    <li{% if page.namespace == "index" %} class="active"{% endif %}><a href="/" class="underline-hover">Work</a></li>
+    <li{% if page.namespace == "about" %} class="active"{% endif %}><a href="/about" class="underline-hover">About</a></li>
   </ul>
 
   <div class="home center hidden-sm hidden-md">
@@ -22,7 +22,9 @@
     <a class="link-home" href="/"><img src="/assets/images/logo_circle.png" width="64" alt="Brian R Zaik" /></a>
   </div>
 
-  <h4 class="center">Hi there! I'm Brian, a product designer based in San Francisco.</h4>
+  <h4 class="center">
+    Hi, I'm Brian, <span class="typed"></span>
+  </h4>
   <h5 class="sub-header center home-padder-margin">I love solving complex problems through products that make people happier and more productive.</h5>
 </header>
 

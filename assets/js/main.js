@@ -1,5 +1,22 @@
 
-$(document).ready(function(){
+var typed = new Typed('header span.typed', {
+  strings: [
+    "a product designer based in San Francisco.",
+    "much more than can be described in one sentence.",
+    "lover of soul and Motown (Marvin, Aretha, Sam, and all their friends).",
+    "and it took me two months to figure out what to put here.",
+    "ready to bring order to chaos.",
+    "ready to jump out of a perfectly good airplane at a moment's notice.",
+    "a Polish guy who speaks Chinese (poorly).",
+    "a product designer based in San Francisco."
+  ],
+  typeSpeed: 10,
+  backSpeed: 10,
+  backDelay: 5000,
+  loop: false
+});
+
+$(function(){
   $('.slick-cards').slick({
     centerMode: true,
     centerPadding: '60px',
@@ -56,6 +73,7 @@ $(document).ready(function(){
     }
   ]
   });
+
 
   // JavaScript
   window.sr = ScrollReveal();
