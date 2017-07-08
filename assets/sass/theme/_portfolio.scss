@@ -12,6 +12,7 @@
 
 .stripe {
   width: 100%;
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,0.2);
 
   // theming for blocks:
 
@@ -167,3 +168,55 @@ video#lotusvid-left {
 video#lotusvid-right {
   width: 100%;
 }
+
+
+.parent {
+  margin: 20px;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.child {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all .4s;
+-moz-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+.parent:hover .child, .parent:focus .child {
+  -ms-transform: scale(1.08);
+  -moz-transform: scale(1.08);
+  -webkit-transform: scale(1.08);
+  -o-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+.parent:hover .child:before, .parent:focus .child:before {
+  display: block;
+}
+
+.parent:hover a, .parent:focus a {
+  display: block;
+}
+
+.child:before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Several different images */
+.bg-innov_suite {background-image: url("/assets/images/work_assets/innovation_suite/hero-innovationstudio.jpg");}
+.bg-lotus {background-image: url("/assets/images/work_assets/lotus/hero-lotus.jpg");}
+.bg-smart_it {background-image: url("/assets/images/work_assets/smart_it/hero-smartit.jpg");}
+.bg-concerto2 {background-image: url("/assets/images/work_assets/concerto2/hero-concerto2.jpg");}
