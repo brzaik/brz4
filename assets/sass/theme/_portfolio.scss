@@ -170,8 +170,10 @@ video#lotusvid-right {
 }
 
 
-.parent {
-  margin: 20px;
+// Styles for scaling background cards on front page
+
+.scale-parent {
+  margin: 40px 0px;
   overflow: hidden;
   position: relative;
   float: left;
@@ -179,17 +181,17 @@ video#lotusvid-right {
   cursor: pointer;
 }
 
-.child {
+.scale-child {
   height: 100%;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-transition: all .4s;
--moz-transition: all .4s;
+  -moz-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
 }
-.parent:hover .child, .parent:focus .child {
+.scale-parent:hover .scale-child, .scale-parent:focus .scale-child {
   -ms-transform: scale(1.08);
   -moz-transform: scale(1.08);
   -webkit-transform: scale(1.08);
@@ -197,15 +199,15 @@ video#lotusvid-right {
   transform: scale(1.08);
 }
 
-.parent:hover .child:before, .parent:focus .child:before {
+.scale-parent:hover .scale-child:before, .scale-parent:focus .scale-child:before {
   display: block;
 }
 
-.parent:hover a, .parent:focus a {
+.scale-parent:hover a, .scale-parent:focus a {
   display: block;
 }
 
-.child:before {
+.scale-child:before {
   content: "";
   display: none;
   height: 100%;

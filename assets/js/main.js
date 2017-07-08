@@ -3,10 +3,10 @@ var typed = new Typed('header span.typed', {
   strings: [
     "a product designer based in San Francisco.",
     "much more than can be described in one sentence.",
-    "lover of soul and Motown (Marvin, Aretha, Sam, and all their friends).",
+    "lover of soul and Motown (especially Marvin and Aretha).",
     "and it took me two months to figure out what to put here.",
     "ready to bring order to chaos.",
-    "ready to jump out of a perfectly good airplane at a moment's notice.",
+    "prone to diving out of perfectly good airplanes.",
     "a Polish guy who speaks Chinese (poorly).",
     "a product designer based in San Francisco."
   ],
