@@ -6,13 +6,10 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Brian R Zaik - UX Designer
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: Brian Zaik - Product Designer and Engineer
+description: > # Hi, I'm Brian, a product designer based in San Francisco. I love solving complex problems through products that make people happier and more productive.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://zaik.co" # the base hostname & protocol for your site
 
 # Markdown settings
 markdown: kramdown

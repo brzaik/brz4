@@ -1,21 +1,4 @@
 
-var typed = new Typed('header span.typed', {
-  strings: [
-    "a product designer based in San Francisco.",
-    "much more than can be described in one sentence.",
-    "lover of soul and Motown (especially Marvin and Aretha).",
-    "and it took me two months to figure out what to put here.",
-    "ready to bring order to chaos.",
-    "prone to diving out of perfectly good airplanes.",
-    "a Polish guy who speaks Chinese (poorly).",
-    "a product designer based in San Francisco."
-  ],
-  typeSpeed: 10,
-  backSpeed: 10,
-  backDelay: 5000,
-  loop: false
-});
-
 $(function(){
   $('.slick-cards').slick({
     centerMode: true,
@@ -53,25 +36,25 @@ $(function(){
     touchMove: true,
     adaptiveHeight: true,
     responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
       }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
+    ]
   });
 
 
@@ -80,11 +63,17 @@ $(function(){
     sr.reveal('.card-work', {});
 
   $(window).bind('scroll', function() {
-     if ($(window).scrollTop() > 100) {
+     if ($(window).scrollTop() > 50) {
          $('#scroll-arrow').fadeOut();
      }
      else {
          $('#scroll-arrow').fadeIn();
+     }
+     if ($(window).scrollTop() > 250) {
+         $('#scroll-arrow-top').fadeIn();
+     }
+     else {
+         $('#scroll-arrow-top').fadeOut();
      }
    });
 });

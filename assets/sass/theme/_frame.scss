@@ -54,13 +54,30 @@ footer {
 }
 
 .scroll-arrow {
-  position: absolute;
+  z-index: 9998;
+  position: fixed;
   bottom: 48px;
   opacity: 0.2;
   width: 100%;
   text-align: center;
 
-  > img {
+  img {
+    margin: 0 auto;
+    width: 30px;
+  }
+}
+
+.scroll-arrow-top {
+  z-index: 9999;
+  display: none;
+  position: fixed;
+  bottom: 48px;
+  right: 48px;
+  opacity: 0.2;
+  width: 100%;
+  text-align: right;
+
+  img {
     margin: 0 auto;
     width: 30px;
   }
