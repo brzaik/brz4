@@ -48,12 +48,15 @@ layout: work
 
 <div class="stripe stripe-gray">
   <div class="padder-condensed padder-margin-bottom">
-    <img src="/assets/images/ph_strawman.png" alt="" />
+    <a href="/assets/images/ph_strawman.png">
+      <img src="/assets/images/ph_strawman.png" alt="" />
+    </a>
   </div>
 </div>
 
 <div class="container container-inset">
-  <h3>Designing for Business Analysts</h3>
+  <p class="sub-header font-uppercase margin-none">Discovery</p>
+  <h3 class="margin-top-none">Designing for Business Analysts</h3>
   <p>
     Drawing from user research, we established five user personas. The two in focus for the first release of Innovation Studio were Seth the Developer and Ajay the Business Analyst. Matching the tools and levels of expertise of these people would be key.
   </p>
@@ -90,45 +93,129 @@ layout: work
 </div>
 <div class="container container-inset padder-margin-bottom">
   <p>
-    Business Analysts had traditionally been an underserved audience with application development tools. Despite the presence of code-less design tools, these tools usually fell far short of providing enough flexibility and power to allow Business Analysts to do more than make very simple changes to applications and provide more detailed requirements to developers so that they could build the app.
+    Business Analysts have traditionally been an underserved audience with application development tools. Despite the presence of code-less design tools, these tools usually fell far short of providing enough flexibility and power to allow Business Analysts to do more than make very simple changes to applications and provide more detailed requirements to developers so that they could build the app.
   </p>
 </div>
 
-<div class="container padder-margin-bottom">
-  <h3>Prototyping the View Designer</h3>
+<div class="stripe stripe-gray">
+  <div class="padder-condensed padder-margin-bottom">
+    <a href="/assets/images/work_assets/innovation_suite/innovsuite_designerIA.png">
+      <img src="/assets/images/work_assets/innovation_suite/innovsuite_designerIA.png" alt="" />
+    </a>
+  </div>
+</div>
+
+<div class="container container-inset padder-margin-bottom">
+  <p class="sub-header font-uppercase margin-none">Concept Development</p>
+  <h3 class="margin-top-none">Information Architecture</h3>
   <p>
-    Innovation Suite already had a series of “designers” to define database fields, set business rules, and manage security. But these editors assumed a moderate level of technical knowledge and were not designed for business analysts. I spent several months establishing the View Designer, a drag-and-drop editor for business analysts to designs the user experiences and interactivity for their multi-platform apps in a visual way.
+    Innovation Suite already had a series of “designers” to define database fields, set business rules, and manage security. But these editors were disconnected and required a lot of advanced knowledge. I spent several months establishing the View Designer, a drag-and-drop editor for business analysts to designs the user experiences and interactivity for their multi-platform apps in a visual way. I also designed a simple information architecture to connect the designers together into a true platform for building end-to-end business apps.
   </p>
 </div>
 
-<div class="container padder-margin-bottom">
-  <h3>The Library</h3>
-  <p>
-    I had used many canvas-based UI designers before, but not one allowing for the high level of configurability needed for Innovation Suite. A central challenge was deciding how to expose the properties and options in a clear way that did not require deep technical knowledge.
-  </p>
+<div class="stripe stripe-black">
+  <div class="padder-flush padder-margin-bottom">
+    <div class="row-flush">
+      <div class="col-5">
+        <div class="padder-calm">
+          <h3>View Designer</h3>
+          <p>
+            I had used many canvas-based UI designers before, but not one allowing for the high level of configurability needed for Innovation Suite. A central challenge was deciding how to expose the properties and options in a clear way that did not require deep technical knowledge. I designed a system of drop target styles and put together a series of view components based on my analysis of the common building blocks of our BMC Smart Apps.
+          </p>
+        </div>
+      </div>
+      <div class="col-7">
+        <img class="full" src="/assets/images/work_assets/innovation_suite/innovsuite_dragdrop.gif" alt="Innovation Suite View Designer Animation" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container container-inset padder-margin-bottom">
   <p>
     Below are a handful of the library components in the first release of Innovation Suite, and their properties. Along the way, I also proposed an actions framework to enable complex interactions between components.
   </p>
 </div>
 
 <div class="container padder-margin-bottom">
-  <h3>Tying it All Together</h3>
-  <p>
-    I had to zoom out a level and think about how the View Designer fit into an end-to-end user experience for designing, configuring, and launching apps to the BMC Marketplace. I worked with another designer to connect all the designer interfaces together and allow Business Analysts and Developers to work together on various pieces of their Smart Apps within Innovation Suite.
-  </p>
+  <div class="slick">
+    <div>
+      <a href="/assets/images/work_assets/innovation_suite/innovsuite_comp_shellmenu.png">
+        <img src="/assets/images/work_assets/innovation_suite/innovsuite_comp_shellmenu.png" alt="" />
+      </a>
+      <p class="caption center">
+        The standard top navigation bar from apps like Smart IT contains one or more menu items, which can be nested within dropdowns. Alternate navigation patterns can also be added as other view components.
+      </p>
+    </div>
+    <div>
+      <a href="/assets/images/work_assets/innovation_suite/innovsuite_comp_grid.png">
+        <img src="/assets/images/work_assets/innovation_suite/innovsuite_comp_grid.png" alt="" />
+      </a>
+      <p class="caption center">
+        Tabular grids of records can be added, with a top bar of optional actions that can perform bulk operations, such as deleting many rows in the grid.
+      </p>
+    </div>
+    <div>
+      <a href="/assets/images/work_assets/innovation_suite/innovsuite_comp_editor.png">
+        <img src="/assets/images/work_assets/innovation_suite/innovsuite_comp_editor.png" alt="" />
+      </a>
+      <p class="caption center">
+        The Record Editor is a powerful component that can contains form inputs, such as text fields and checkboxes. These can each be reordered and configured independently.
+      </p>
+    </div>
+    <div>
+      <a href="/assets/images/work_assets/innovation_suite/innovsuite_comp_actionbutton.png">
+        <img src="/assets/images/work_assets/innovation_suite/innovsuite_comp_actionbutton.png" alt="" />
+      </a>
+      <p class="caption center">
+        Action buttons have multiple themable styles (bordered, primary and secondary colors, flat buttons) and can trigger powerful custom UI actions. They are used for everything from submitting forms to showing other views in modal windows.
+      </p>
+    </div>
+    <div>
+      <a href="/assets/images/work_assets/innovation_suite/innovsuite_comp_richtext.png">
+        <img src="/assets/images/work_assets/innovation_suite/innovsuite_comp_richtext.png" alt="" />
+      </a>
+      <p class="caption center">
+        The Rich Text component can be used to add styled text to your app using a WYSIWYG editor. Custom CSS styles can be configured and applied to headers and other block elements.
+      </p>
+    </div>
+  </div>
 </div>
 
-<div class="container padder-margin-bottom">
-  <h3>Support Mobile Platforms</h3>
-  <p>
-    I also needed to think about the best ways to support multi-platform apps that present equivalent experiences across Web and mobile phones and tablets. Customers loved the native iOS and Android experiences for Smart IT, so my mission was to work with the engineering team to allow Studio apps to support up to five platform targets.
-  </p>
-  <p>
-    I recognized that having to design an app for multiple platforms would just multiply the required effort of the business analyst. So I instead devised a strategy to keep views in sync across all supported platforms and permit the business analyst to diverge selected views if they wished to implement a custom design for that part of the app on a mobile platform. This also allowed certain features to only be for Web or mobile. I also took all the default library components and designed mobile-specific versions that were then built as native iOS and Android code.
-  </p>
-</div>
-
-<div class="container padder-margin-bottom">
-  <h3>Results</h3>
-
+<div class="stripe stripe-gray">
+  <div class="padder-page padder-margin-bottom">
+    <div class="container container-inset">
+      <h3>Supporting Mobile Platforms</h3>
+      <p>
+        I also needed to think about the best ways to support multi-platform apps that present equivalent experiences across Web and mobile phones and tablets. Customers loved the native iOS and Android experiences for Smart IT, so my mission was to work with the engineering team to allow Studio apps to support up to five platform targets.
+      </p>
+      <p>
+         I also took all the default library components and designed mobile-specific versions that were then built as native iOS and Android code.
+      </p>
+    </div>
+    <div class="container padder-condensed">
+      <a href="/assets/images/work_assets/innovation_suite/innovsuite_mobile1.png">
+        <img src="/assets/images/work_assets/innovation_suite/innovsuite_mobile1.png" alt="" />
+      </a>
+      <p class="caption center">
+        I recognized that having to design an app for multiple platforms would just multiply the required effort of the business analyst. By default, views designed for the Web are automatically translated to native mobile view components and kept in sync.
+      </p>
+    </div>
+    <div class="container padder-condensed">
+      <a href="/assets/images/work_assets/innovation_suite/innovsuite_mobile2.png">
+        <img src="/assets/images/work_assets/innovation_suite/innovsuite_mobile2.png" alt="" />
+      </a>
+      <p class="caption center">
+        If the business analyst wishes to add custom native mobile components, such as a map, the view can be unlocked from the other platforms and designed specially for mobile platforms.
+      </p>
+    </div>
+    <div class="container padder-condensed">
+      <a href="/assets/images/work_assets/innovation_suite/innovsuite_mobile3.png">
+        <img src="/assets/images/work_assets/innovation_suite/innovsuite_mobile3.png" alt="" />
+      </a>
+      <p class="caption center">
+        To enable the view synchronization across platforms, I designed native mobile equivalents of all the out of the box view components for iOS and Android phones and tablets.
+      </p>
+    </div>
+  </div>
 </div>
