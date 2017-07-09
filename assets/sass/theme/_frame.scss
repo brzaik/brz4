@@ -71,15 +71,23 @@ footer {
   z-index: 9999;
   display: none;
   position: fixed;
-  bottom: 48px;
-  right: 48px;
-  opacity: 0.2;
+  bottom: 24px;
+  right: 24px;
   width: 100%;
   text-align: right;
 
   img {
     margin: 0 auto;
     width: 30px;
+  }
+
+  a {
+    opacity: 0.2;
+    transition: ease-in-out all 0.15s;
+
+    &:hover {
+      opacity: 1.0;
+    }
   }
 }
 
