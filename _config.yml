@@ -8,7 +8,7 @@
 # Site settings
 title: Brian Zaik - Product Designer and Engineer
 description: > # Hi, I'm Brian, a product designer based in San Francisco. I love solving complex problems through products that make people happier and more productive.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://zaik.co" # the base hostname & protocol for your site
 
 # Markdown settings
