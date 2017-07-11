@@ -5,7 +5,6 @@ $(function(){
     centerPadding: '60px',
     lazyLoad: 'progressive',
     infinite: false,
-    initialSlide: $('.slick-cards > div').size() - 1,
     nextArrow:"<div class='a-right control-c next slick-next'><img src='/assets/images/slick_arrow_right.png' /></div>",
     prevArrow:"<div class='a-left control-c prev slick-prev'><img src='/assets/images/slick_arrow_left.png' /></div>",
     swipe: true,
