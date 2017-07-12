@@ -29,8 +29,23 @@
     margin-right: auto;
   }
 
+  .right {
+    text-align: center;
+  }
+
   footer {
     margin-top: 120px;
+
+    ul.nav.right {
+      float: none;
+      margin-top: 50px;
+
+      li {
+        display: block;
+        text-align: center;
+        margin: 12px 0px;
+      }
+    }
   }
 }
 
@@ -62,13 +77,10 @@
 
   footer {
     ul.nav.right {
-      float: none;
       margin-top: 50px;
 
       li {
-        display: block;
-        text-align: center;
-        margin: 12px 0px;
+        margin: 12px;
       }
     }
   }
