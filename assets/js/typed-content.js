@@ -12,6 +12,6 @@ var typed = new Typed('header span.typed', {
   ],
   typeSpeed: 10,
   backSpeed: 10,
-  backDelay: 5000,
+  backDelay: 6000,
   loop: false
 });

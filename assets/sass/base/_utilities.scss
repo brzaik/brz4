@@ -1,3 +1,35 @@
+@keyframes bounce {
+  0%, 10%, 30%, 50%, 80%, 100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  5% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  15% {
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
+.bounce {
+  -moz-animation: bounce 6s infinite;
+  -webkit-animation: bounce 6s infinite;
+  animation: bounce 6s infinite;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+
+
 .clearfix:after {
   visibility: hidden;
   display: block;

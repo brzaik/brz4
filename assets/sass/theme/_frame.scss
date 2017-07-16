@@ -54,27 +54,9 @@ footer {
 }
 
 .scroll-arrow {
-  z-index: 9998;
-  position: fixed;
-  bottom: 48px;
-  opacity: 0.2;
   width: 100%;
-  text-align: center;
-
-  img {
-    margin: 0 auto;
-    width: 30px;
-  }
-}
-
-.scroll-arrow-top {
+  position: fixed;
   z-index: 9999;
-  display: none;
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  width: 100%;
-  text-align: right;
 
   img {
     margin: 0 auto;
@@ -88,6 +70,18 @@ footer {
     &:hover {
       opacity: 1.0;
     }
+  }
+
+  &.scroll-arrow-down {
+    bottom: 48px;
+    text-align: center;
+  }
+
+  &.scroll-arrow-top {
+    display: none;
+    bottom: 24px;
+    right: 24px;
+    text-align: right;
   }
 }
 
