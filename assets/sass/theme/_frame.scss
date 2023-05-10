@@ -29,6 +29,10 @@ header.header-short {
 
 footer {
   padding-bottom: 100px;
+
+  a.name-link {
+    color: $gray-dark;
+  }
 }
 
 .padder-margin {

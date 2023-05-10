@@ -1,4 +1,4 @@
-body.theme-dark {
+html.theme-dark {
   $gray-dark:                 #333333;
   $gray:                      #828282;
   $gray-light:                #cccccc;
@@ -6,4 +6,24 @@ body.theme-dark {
   $link-color:                #199ED7;
   $link-color-darkbg:         #6DCEF8;
   $color-base:                #FFFFFA;
+
+  background: #202124;
+  color: $color-base;
+
+  main, body {
+    background: #202124;
+  }
+
+  ul.nav li a {
+    color: $link-color;
+  }
+
+  footer a.name-link {
+    color: $color-base;
+  }
+
+  .logo-img {
+    -webkit-filter: grayscale(1) invert(1);
+    filter: grayscale(1) invert(1);
+  }
 }
