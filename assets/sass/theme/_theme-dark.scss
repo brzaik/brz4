@@ -22,7 +22,7 @@ html.theme-dark {
     color: $color-base;
   }
 
-  .logo-img {
+  .logo-img, #scroll-arrow-top img {
     -webkit-filter: grayscale(1) invert(1);
     filter: grayscale(1) invert(1);
   }
