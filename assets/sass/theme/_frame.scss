@@ -67,10 +67,13 @@ footer {
   }
 
   a {
+    padding: 16px 14px;
+    border-radius: 100px;
     opacity: 0.2;
     transition: ease-in-out all 0.15s;
 
     &:hover {
+      background: $gray-light;
       opacity: 1.0;
     }
   }
@@ -111,5 +114,13 @@ span.typed-cursor {
 }
 
 .typed-headline {
-  min-height: 150px;
+  min-height: 200px;
+
+  a {
+    color: $color-base;
+
+    &:hover {
+      color: $link-color;
+    }
+  }
 }

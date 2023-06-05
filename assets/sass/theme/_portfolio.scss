@@ -1,12 +1,18 @@
 .card-work {
-  margin-bottom: 120px;
+  margin-bottom: 60px;
+
+  a:hover h4 {
+    color: $link-color;
+    transition: ease-in-out all 0.15s;
+  }
 
   .card-title {
     margin: 28px;
-  }
-
-  .card-title h4 {
-    display: inline-block;
+    h4 {
+      color: $color-base;
+      display: inline-block;
+      transition: ease-in-out all 0.15s;
+    }
   }
 }
 
@@ -177,7 +183,7 @@ video#lotusvid-right {
 // Styles for scaling background cards on front page
 
 .scale-parent {
-  margin: 40px 0px;
+  margin: 20px 0px;
   overflow: hidden;
   position: relative;
   float: left;
@@ -226,3 +232,5 @@ video#lotusvid-right {
 .bg-lotus {background-image: url("/assets/images/work_assets/lotus/hero-lotus.jpg");}
 .bg-smart_it {background-image: url("/assets/images/work_assets/smart_it/hero-smartit.jpg");}
 .bg-concerto2 {background-image: url("/assets/images/work_assets/concerto2/hero-concerto2.jpg");}
+.bg-particle {background-image: url("/assets/images/work_assets/particle/hero-particle.png");}
+.bg-dem {background-image: url("/assets/images/work_assets/dem/hero-dem.jpg");}
