@@ -33,7 +33,7 @@ $(function(){
     swipe: true,
     swipeToSlide: true,
     touchMove: true,
-    adaptiveHeight: true,
+    adaptiveHeight: false,
     responsive: [
       {
         breakpoint: 768,
