@@ -77,7 +77,9 @@
     right: 0;
   }
   .slick-slide {
-    //border: solid 12px #FFF;
+    .caption {
+      min-height: 150px;
+    }
   }
 
   .slick-cards {
