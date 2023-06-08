@@ -24,7 +24,7 @@ blockquote {
   border-left: 10px solid #ccc;
   margin: 1.5em 0;
   padding: 0.5em 20px;
-  
+
   &:before {
     color: #ccc;
     font-size: 4em;
@@ -60,11 +60,6 @@ a {
   text-decoration: none;
   transition: ease-in-out all 0.15s;
 
-  &.underline {
-    border-bottom: solid 1px $link-color;
-    transition: ease-in-out all 0.15s;
-  }
-
   &:hover {
     color: darken($link-color, 15%);
     transition: ease-in-out all 0.15s;
@@ -76,6 +71,20 @@ a {
     &.underline-hover {
       border-bottom: solid 1px darken($link-color, 15%);
     }
+  }
+
+  &.neutral {
+    color: $color-base;
+
+    &:hover {
+      color: darken($color-base, 15%);
+      transition: ease-in-out all 0.15s;
+    }
+  }
+
+  &.underline {
+    border-bottom: solid 1px $link-color;
+    transition: ease-in-out all 0.15s;
   }
 }
 
