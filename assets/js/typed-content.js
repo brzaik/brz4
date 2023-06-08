@@ -7,6 +7,7 @@ var typed = new Typed('header span.typed', {
     "a creative with a coding problem.",
     "sailor and skipper of the seven seas.",
     "lover of warm-sounding vinyl records.",
+    "purveyor of tasty teas and homemade cocktails.",
     "more concerned with growing down than growing up.",
     "ready to bring order to chaos.",
     "explorer of cultures, cuisines, and stories worldwide.",
