@@ -1,6 +1,6 @@
 var typed = new Typed('header span.typed', {
   strings: [
-    "a product manager and designer based in California.",
+    "a design-focused product leader based in California.",
     "who loves solving problems to make people happier.",
     "much more than can be described in one sentence.",
     "lover of the spiciest foods on Earth.",
