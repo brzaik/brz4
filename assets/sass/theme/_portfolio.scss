@@ -1,6 +1,16 @@
 .card-work {
   margin-bottom: 60px;
 
+  .type-label {
+    opacity: 0;
+    transition: ease-in-out all 0.15s;
+  }
+  a:hover {
+    .type-label {
+      opacity: 1;
+      transition: ease-in-out all 0.15s;
+    }
+  }
   a:hover h4 {
     color: $link-color;
     transition: ease-in-out all 0.15s;
@@ -68,6 +78,31 @@
 .stripe-home {
   height: 350px;
   box-shadow: 0 3px 4px 0 rgba(0,0,0,0.2);
+}
+
+// TYPE LABELS
+// Used for pills on work blocks
+.type-label {
+  padding: 2px 8px;
+  background-color: $gray-light;
+  color: #FFF;
+  border-radius: 50px;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &.label-seafoam {
+    background-color: #76E4CB;
+    color: #FFF;
+  }
+  &.label-sky {
+    background-color: #80E0FF;
+    color: #FFF;
+  }
+  &.label-peach {
+    background-color: #FFCF80;
+    color: #FFF;
+  }
 }
 
 
