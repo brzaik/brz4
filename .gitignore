@@ -8,3 +8,4 @@ aerobatic.*
 _aerobatic.*
 vendor/
 .bundle/
+.jekyll-cache/*
